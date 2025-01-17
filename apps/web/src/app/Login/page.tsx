@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import { UserCircle, Lock, ArrowRight } from 'lucide-react'
+import { HeaderOnly } from '@/components/HeaderNoLoginRegis'
 
 export default function Login() {
-  return (
+  return (<>
+  <HeaderOnly />
     <div 
       className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('https://cdn.racingnews365.com/2024/_1800x945_crop_center-center_75_none/XPB_1209903_HiRes.jpg?v=1706002336')" }}
@@ -44,8 +46,9 @@ export default function Login() {
               <button
                 type="submit"
                 className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition duration-150 ease-in-out"
+                
               >
-                Sign in
+                <a href='/'>Sign in</a>
                 <ArrowRight className="ml-2 h-5 w-5 text-white group-hover:translate-x-1 transition-transform duration-150 ease-in-out" />
               </button>
             </div>
@@ -61,6 +64,7 @@ export default function Login() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

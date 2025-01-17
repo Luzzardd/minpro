@@ -1,13 +1,16 @@
 import Link from 'next/link'
 import AutoCarousel from '@/components/Carousel'
 import Content from '@/components/Content'
-import Login from './login/page'
-
+import ProductSlider from '@/components/ProductSlider'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import LandingPage from './landingPage/page'
 export default function Home() {
   return (
     <>
-     <AutoCarousel/>
-    <Content/>
+    <Header />
+    <LandingPage />
+    <Footer />
     </>
   )
 }
