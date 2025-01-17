@@ -1,201 +1,105 @@
-import React from 'react';
-import './../app/page.module.css'
+'use client';  // Mark the component as a Client Component
+
+import React, { useState } from 'react';
+import './../app/page.module.css';
 
 function CardSlider() {
+  // State to manage selected country
+  const [selectedCountry, setSelectedCountry] = useState<string>("");
+
+  // Explicitly typing the event parameter
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCountry(event.target.value);
+  };
+
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div className="relative bg-gradient-to-br from-red-900 via-red-900 to-orange-700 min-h-screen flex items-center justify-center p-6 relative">
+
+      {/* Dropdown Kategori */}
+      <div className="absolute top-6 right-6 z-50">
+        <div className="relative">
+          <label htmlFor="country-select" className="block text-sm font-medium text-white mb-2">
+            Select an option
+          </label>
+          <select
+            id="country-select"
+            name="country"
+            className="block w-48 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            value={selectedCountry}
+            onChange={handleChange}
+          >
+            <option value="" disabled>
+              Choose a country
+            </option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="IN">India</option>
+            <option value="AU">Australia</option>
+            <option value="GB">United Kingdom</option>
+          </select>
+        </div>
+      </div>
+
       {/* Container Slider */}
-      <div className="w-full max-w-5xl overflow-x-auto flex gap-4 snap-x snap-mandatory scroll-smooth scrollbar-hide">
+      <div className="w-full max-w-7xl relative overflow-x-auto flex gap-8 snap-x snap-mandatory scroll-smooth scrollbar-hide">
         
         {/* Card 1 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?product"
-            alt="Product 1"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 1</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 1.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 100.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
+        <div className="flex flex-col max-w-[500px] snap-start bg-gradient-to-br from-gray-900 via-red-900 to-orange-800 shadow-2xl rounded-lg overflow-hidden">
+  <img
+    className="w-full h-auto object-cover rounded-lg"
+    src="https://beritabalap.com/wp-content/uploads/2020/11/Banner-ICP-2020-700x400.jpg"
+    alt="Team"
+  />
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-2 text-white">Produk 1</h3>
+    <p className="text-gray-200 mb-4">
+      Deskripsi singkat produk 1. Produk ini menawarkan kualitas terbaik dengan harga yang terjangkau.
+    </p>
+    <p className="text-blue-600 font-bold text-lg mb-4">Rp 100.000</p>
+    <button className="w-full py-2 px-4 text-sm font-medium rounded-md text-white bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition duration-150 ease-in-out">
+      Beli Sekarang
+    </button>
+  </div>
+</div>
 
+  
         {/* Card 2 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?product,technology"
-            alt="Product 2"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 2</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 2.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 150.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
+        <div className="flex flex-col max-w-[500px] snap-start bg-gradient-to-br from-gray-900 via-red-900 to-orange-800 shadow-2xl rounded-lg overflow-hidden">
+  <img
+    className="w-full h-auto object-cover rounded-lg"
+    src="https://beritabalap.com/wp-content/uploads/2020/11/Banner-ICP-2020-700x400.jpg"
+    alt="Team"
+  />
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-2 text-white">Produk 1</h3>
+    <p className="text-gray-200 mb-4">
+      Deskripsi singkat produk 1. Produk ini menawarkan kualitas terbaik dengan harga yang terjangkau.
+    </p>
+    <p className="text-blue-600 font-bold text-lg mb-4">Rp 100.000</p>
+    <button className="w-full py-2 px-4 text-sm font-medium rounded-md text-white bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition duration-150 ease-in-out">
+      Beli Sekarang
+    </button>
+  </div>
+</div>
+  
         {/* Card 3 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?shoes"
-            alt="Product 3"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 3</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 3.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 200.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?fashion"
-            alt="Product 4"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 4</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 4.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 250.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 5 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?mobile"
-            alt="Product 5"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 5</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 5.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 300.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 6 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?gaming"
-            alt="Product 6"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 6</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 6.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 350.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 7 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?bag"
-            alt="Product 7"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 7</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 7.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 400.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 8 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?watch"
-            alt="Product 8"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 8</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 8.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 450.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 9 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?cosmetic"
-            alt="Product 9"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 9</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 9.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 500.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
-
-        {/* Card 10 */}
-        <div className="min-w-[240px] snap-start bg-white shadow-lg rounded-lg overflow-hidden">
-          <img
-            src="https://source.unsplash.com/600x400?accessories"
-            alt="Product 10"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2">Produk 10</h3>
-            <p className="text-gray-600 mb-3">
-              Deskripsi singkat produk 10.
-            </p>
-            <p className="text-blue-600 font-bold mb-2">Rp 550.000</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Beli Sekarang
-            </button>
-          </div>
-        </div>
+        <div className="flex flex-col max-w-[500px] snap-start bg-gradient-to-br from-gray-900 via-red-900 to-orange-800 shadow-2xl rounded-lg overflow-hidden">
+  <img
+    className="w-full h-auto object-cover rounded-lg"
+    src="https://beritabalap.com/wp-content/uploads/2020/11/Banner-ICP-2020-700x400.jpg"
+    alt="Team"
+  />
+  <div className="p-6">
+    <h3 className="text-2xl font-semibold mb-2 text-white">Produk 1</h3>
+    <p className="text-gray-200 mb-4">
+      Deskripsi singkat produk 1. Produk ini menawarkan kualitas terbaik dengan harga yang terjangkau.
+    </p>
+    <p className="text-blue-600 font-bold text-lg mb-4">Rp 100.000</p>
+    <button className="w-full py-2 px-4 text-sm font-medium rounded-md text-white bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 transition duration-150 ease-in-out">
+      Beli Sekarang
+    </button>
+  </div>
+</div>
 
       </div>
     </div>
