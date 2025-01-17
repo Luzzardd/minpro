@@ -12,3 +12,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Racing Sans One', cursive; /* Custom font for headings */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+  

@@ -1,10 +1,11 @@
 "use client";
-
 import { useState } from 'react';
 import Link from 'next/link';
-import AutoCarousel from '../components/Carousel'; // Corrected import path
-import Content from '../components/Content'; // Corrected import path
-
+import Image from 'next/image'
+import styles from './page.module.css'
+import AutoCarousel from '@/components/Carousel'
+import Content from '@/components/Content'
+import ProductSlider from '@/components/ProductSlider'
 export default function Home() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -68,8 +69,9 @@ export default function Home() {
 export function HomePage() {
   return (
     <>
-      <AutoCarousel />
-      <Content />
+    <AutoCarousel/>
+    <Content/>
+    <ProductSlider/>
     </>
   );
 }

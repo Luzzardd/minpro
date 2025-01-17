@@ -35,5 +35,15 @@
   "dependencies": {
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1"
-  }
+  },
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2"
+},
+{
+  "description": "This project uses React.js with NextJS for the frontend, Express.js for the backend, and TurboRepo for monorepo management, facilitating rapid development of a scalable web application with streamlined collaboration and efficient server-client interactions.",
+  "version": "1.0.0",
+  "main": "commitlint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
