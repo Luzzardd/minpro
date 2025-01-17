@@ -11,14 +11,6 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
-    "@types/axios": "^0.9.36",
-    "@types/bcrypt": "^5.0.2",
-    "@types/body-parser": "^1.19.5",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/http-errors": "^2.0.4",
-    "@types/mime": "^3.0.4",
-    "@types/minimist": "^1.2.5",
     "eslint": "^8.48.0",
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
@@ -33,13 +25,9 @@
     "packages/*"
   ],
   "dependencies": {
-    "axios": "^1.7.2",
-    "bcrypt": "^5.1.1"
-  },
     "@types/axios": "^0.14.0",
     "axios": "^1.7.2"
-},
-{
+  },
   "description": "This project uses React.js with NextJS for the frontend, Express.js for the backend, and TurboRepo for monorepo management, facilitating rapid development of a scalable web application with streamlined collaboration and efficient server-client interactions.",
   "version": "1.0.0",
   "main": "commitlint.config.js",
