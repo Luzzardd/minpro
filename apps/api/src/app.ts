@@ -10,6 +10,7 @@ import express, {
 import cors from 'cors';
 import { PORT } from './config';
 import { SampleRouter } from './routers/sample.router';
+import { authUser } from './controllers/auth.controller'; // Import the authUser function
 
 export default class App {
   private app: Express;
@@ -58,6 +59,7 @@ export default class App {
     });
 
     this.app.use('/api/samples', sampleRouter.getRouter());
+    this.app.post('/api/auth', authUser); // Add the authentication route
   }
 
   public start(): void {
@@ -65,4 +67,4 @@ export default class App {
       console.log(`  ➜  [API] Local:   http://localhost:${PORT}/`);
     });
   }
-}
+};

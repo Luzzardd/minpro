@@ -6,9 +6,9 @@
 
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light background for the overall app */
 }
 
-.racing-font {
-  font-family: 'Racing Sans One', cursive;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Racing Sans One', cursive; /* Custom font for headings */
 }
-
