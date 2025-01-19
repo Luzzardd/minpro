@@ -1,7 +1,6 @@
-import { Header } from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Footer } from '@/components/Footer'
+
 
 export const metadata: Metadata = {
   title: 'Auth Pages',

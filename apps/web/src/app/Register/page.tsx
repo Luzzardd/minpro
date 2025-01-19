@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Register() {
   return (<>
-    <div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative bg-[url('https://www.racefans.net/wp-content/uploads/2018/09/racefansdotnet-20180930-200940-16.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-40 relative">
+    <div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative bg-[url('https://www.racefans.net/wp-content/uploads/2018/09/racefansdotnet-20180930-200940-16.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-40">
       <div className="w-full max-w-md">
         <div className="backdrop-blur-lg bg-white bg-opacity-10 rounded-2xl shadow-xl overflow-hidden p-6 space-y-6 border border-red-500">
           <div className="flex justify-center mb-8">
