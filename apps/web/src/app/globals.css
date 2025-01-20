@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.racing-font {
+  font-family: 'Racing Sans One', cursive;
+}
 
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -10,4 +20,24 @@
     -ms-overflow-style: none; 
     scrollbar-width: none;    
   }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  
   

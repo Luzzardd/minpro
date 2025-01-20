@@ -1,4 +1,4 @@
-import { SampleController } from '@/controllers/sample.controller';
+import { SampleController } from './controllers/sample.controller'; // Corrected import
 import { Router } from 'express';
 
 export class SampleRouter {

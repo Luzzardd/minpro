@@ -1,14 +1,22 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import AutoCarousel from '@/components/Carousel'
-import Content from '@/components/Content'
-import ProductSlider from '@/components/ProductSlider'
+
+import LandingPage from './landingPage/page'
+
 export default function Home() {
   return (
     <>
-    <AutoCarousel/>
-    <Content/>
-    <ProductSlider/>
+    
+    <LandingPage />
+
+
     </>
   )
 }
+// export default function HomePage() {
+//   return (
+//     <>
+//     <AutoCarousel/>
+//     <Content/>
+//     </>
+//   )
+// }
+
