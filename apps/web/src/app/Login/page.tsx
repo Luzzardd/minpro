@@ -3,6 +3,8 @@ import { UserCircle, Lock, ArrowRight } from 'lucide-react'
 import { Poppins } from 'next/font/google'
 import { Montserrat } from 'next/font/google'
 
+
+
 const poppins = Poppins({
   weight: ['400', '600', '700'],
   subsets: ['latin'],
@@ -66,7 +68,7 @@ export default function Login() {
           </form>
           <div className="mt-6 text-center">
             <Link 
-              href="/register" 
+              href="/Register" 
               className="font-medium text-white/90 hover:text-orange-300 transition duration-150 ease-in-out"
             >
               Dont have an account? <span className="text-red-500">Register</span>

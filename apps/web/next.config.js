@@ -28,7 +28,8 @@ const nextConfig = {
       'mma.prnewswire.com',
       'assets.quintevents.com',
       'via.placeholder.com',
-      'd2xpg1khvwxlf1.cloudfront.net'
+      'd2xpg1khvwxlf1.cloudfront.net',
+      'vectorseek.com'
       
     ],
   },

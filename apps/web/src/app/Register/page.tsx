@@ -82,7 +82,7 @@ export default function Register() {
           <div className="text-center text-white text-sm">
             Already in the race?{' '}
             <span className="text-red-400 font-semibold">
-              <Link href="/login">Log in</Link>
+              <Link href="/Login">Log in</Link>
             </span>
           </div>
         </div>

@@ -1,13 +1,15 @@
 
-import LandingPage from './landingPage/page'
+import EnhancedCarousel from '@/components/Carousel'
+import Content from '@/components/Content'
+import CardSlider from '@/components/CardSlider'
+import { LogIn } from 'lucide-react'
 
 export default function Home() {
   return (
     <>
-    
-    <LandingPage />
-
-
+    <EnhancedCarousel/>
+    <Content/>
+    <CardSlider/>
     </>
   )
 }
