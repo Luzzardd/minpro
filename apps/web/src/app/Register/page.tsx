@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 export default function Register() {
-  return (<>
+  return (
     <div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative bg-[url('https://www.racefans.net/wp-content/uploads/2018/09/racefansdotnet-20180930-200940-16.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-40">
       <div className="w-full max-w-md">
-        <div className="backdrop-blur-lg bg-white bg-opacity-10 rounded-2xl shadow-xl overflow-hidden p-6 space-y-6 border border-red-500">
+        <div className="backdrop-blur-lg bg-white bg-opacity-10 rounded-2xl shadow-xl overflow-hidden p-6 space-y-6">
           <div className="flex justify-center mb-8">
             <svg className="w-20 h-20 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path>
@@ -22,7 +22,7 @@ export default function Register() {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full pl-10 pr-4 py-2 rounded-lg bg-black bg-opacity-50 border border-red-500 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
+                className="w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border border-gray-600 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
                 readOnly
               />
             </div>
@@ -36,7 +36,7 @@ export default function Register() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full pl-10 pr-4 py-2 rounded-lg bg-black bg-opacity-50 border border-red-500 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
+                className="w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border border-gray-600 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
                 readOnly
               />
             </div>
@@ -50,7 +50,7 @@ export default function Register() {
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full pl-10 pr-4 py-2 rounded-lg bg-black bg-opacity-50 border border-red-500 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
+                className="w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border border-gray-600 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
                 readOnly
               />
             </div>
@@ -64,7 +64,7 @@ export default function Register() {
               <input
                 type="text"
                 placeholder="Referral Code (Optional)"
-                className="w-full pl-10 pr-4 py-2 rounded-lg bg-black bg-opacity-50 border border-red-500 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
+                className="w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border border-gray-600 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
                 readOnly
               />
             </div>
@@ -88,7 +88,6 @@ export default function Register() {
         </div>
       </div>
     </div>
-    </>
   )
 }
 
