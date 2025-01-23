@@ -47,110 +47,110 @@ function CardSlider() {
     {
       id: 1,
       name: 'FORMULA 1 BAHRAIN GRAND PRIX 2024',
-      date: '28 Feb - 02 Mar',
+      date: 'October 13, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/3c8309ba58064714/72_DPI_WEB-F1E-Bahrain-2024-Atmosphere-1.jpg',
+        '/bahrain.jpg',
       price: 299,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11782-F1-Experiences-Bahrain-Flag-06a6d123b66b68e5e8cc2551a6766558.jpg',
+      flag: '/flagbahrain.jpg',
     },
     {
       id: 2,
       name: 'FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024',
-      date: '06 - 08 Mar',
+      date: 'September 8, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/168cfd4e02668ef4/72_DPI_WEB-F1E-Saudi-Arabia-2023-Circuit-14.jpg',
+        '/saudiarabia.jpg',
       price: 320,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/35997-saudia-flag-ed3f609dedf1ae67ce77c11a4f9029ec.jpg',
+      flag: '/flagsaudiarabia.jpg',
     },
     {
       id: 3,
       name: 'FORMULA 1 AUSTRALIAN GRAND PRIX 2024',
-      date: '21 - 23 Mar',
+      date: 'March 21, 2024 - 3:00 PM',
       image:
-        'https://assets.quintevents.com/m/6f05a5421dc6c34f/72_DPI_WEB-F1E-Australia-2024-Melbourne-Walk-01.jpg',
+        '/australia.jpg',
       price: 350,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11779-F1-Experiences-Australia-Flag-4814265bf3693e1de8a5e3dd3804df00.jpg',
+      flag: '/flagaustralia.jpg',
     },
     {
       id: 4,
       name: 'FORMULA 1 LENOVO JAPANESE GRAND PRIX 2024',
-      date: '04 - 06 Apr',
+      date: 'September 22, 2024 - 8:00 PM',
       image:
-        'https://assets.quintevents.com/m/5ea45cd1135f5e5f/72_DPI_WEB-F1E-Japan-2024-Atmosphere-2.jpg',
+        '/japan.jpg',
       price: 400,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11787-F1-Experiences-Japan-Flag-5970d6f199ed3fd21b15948d02626d55.jpg',
+      flag: '/flagjapan.jpg',
     },
     {
       id: 5,
       name: 'FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2024',
-      date: '18 - 20 Apr',
+      date: 'June 2, 2024 - 3:00 PM',
       image:
-        'https://assets.quintevents.com/m/6ec073b5a3c98a00/72_DPI_WEB-F1E-China-2024-Atmosphere-05.jpg',
+        '/china.jpg',
       price: 380,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11781-F1-Experiences-China-Flag-68290c466ab81d52e528de49945283e3.gif',
+      flag: '/flagchina.jpg',
     },
     {
       id: 6,
       name: 'FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024',
-      date: '02 - 04 May',
+      date: 'July 7, 2024 - 3:00 PM',
       image:
-        'https://assets.quintevents.com/m/7e6472eba46ae3b6/72_DPI_WEB-F1E-Miami-2022-Atmosphere-1.jpg',
+        '/miami.jpg',
       price: 450,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11786-F1-Experiences-United-States-Flag-a02dcc4cdc47edb9ac2cdd960c6a11f7.jpg',
+      flag: '/flagmiami.jpg',
     },
     {
       id: 7,
       name: "FORMULA 1 AWS GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2024",
-      date: '16 - 18 May',
+      date: 'June 9, 2024 - 4:00 PM ',
       image:
-        'https://assets.quintevents.com/m/5f12fdcdeb09ca8/72_DPI_WEB-F1E-Imola-2024-City-Atmosphere.jpg',
+        '/itali.jpg',
       price: 390,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11789-F1-Experiences-Italy-Flag-4f122d0ebc49ea69ac8b91c6867226c5.jpg',
+      flag: '/flagitali.jpg',
     },
     {
       id: 8,
       name: 'FORMULA 1 GRAND PRIX DE MONACO 2024',
-      date: '23 - 25 May',
+      date: 'May 26, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/1627a5c7473efc15/72_DPI_WEB-F1E-Monaco-2024-Circuit-02.jpg',
+        '/monaco.jpg',
       price: 500,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11796-F1-Experiences-Monaco-Flag-af29faae5e17f8e0cfb1df7b76554a53.jpg',
+      flag: '/flagmonaco.jpg',
     },
     {
       id: 9,
       name: 'FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2024',
-      date: '06 - 08 Jun',
+      date: 'November 24, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/411e00aa17b5593d/72_DPI_auto-F1E-Canada-2023-Grandstand-24-1.jpg',
+        '/canada.jpg',
       price: 420,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11795-F1-Experiences-Canada-Flag-7cbf4f47837145f98657e0b0040375c5.jpg',
+      flag: '/flagcanada.jpg',
     },
     {
       id: 10,
       name: 'FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024',
-      date: '20 - 22 Jun',
+      date: 'November 17, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/2cc0cce9453d8dfb/72_DPI_WEB-F1E-Spain-2024-Barcelona-City.jpg',
+        '/spain.jpg',
       price: 370,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11797-F1-Experiences-Spain-Flag-520905b7bb1a264177bcd630b71b84b2.gif',
+      flag: '/flagspain.jpg',
     },
     {
       id: 11,
       name: 'FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2024',
-      date: '27 - 29 Jun',
+      date: 'November 3, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/575b826a25787f45/72_DPI_WEB-F1E-Austria-2024-Circuit-Atmosphere-16.jpg',
+        '/austrian.jpg',
       price: 360,
-      flag: 'https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11793-F1-Experiences-Austria-Flag-f40682caa57d76676396c13bf0c9846c.gif',
+      flag: '/flagaustrian.jpg',
     },
     {
       id: 12,
       name: 'FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024',
-      date: '04 - 06 Jul',
+      date: 'October 27, 2024 - 2:00 PM',
       image:
-        'https://assets.quintevents.com/m/6979609dc0a11b38/72_DPI_WEB-F1E-Las-Vegas-2023-Circuit-Car.jpg',
+        '/lasvegas.jpg',
       price: 410,
-      flag: 'https://via.placeholder.com/40',
+      flag: '/flagusa.jpg',
     },
   ];
 
@@ -289,7 +289,7 @@ function RaceCard({ race }: { race: Race }) {
           </span>
         </div>
         <button className="w-full px-4 py-2 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-md hover:from-red-700 hover:to-red-800 transition-colors duration-300 font-racing tracking-wide flex items-center justify-center">
-          Book Now
+          View more
           <ChevronRight className="w-4 h-4 ml-2" />
         </button>
       </div>

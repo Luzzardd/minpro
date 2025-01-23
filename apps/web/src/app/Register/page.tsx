@@ -1,6 +1,28 @@
+'use client'
+
 import Link from "next/link"
+import { useState } from "react"
 
 export default function Register() {
+  const [email, setEmail] = useState("")
+  const [emailError, setEmailError] = useState("")
+
+  const checkEmail = async (e :any ) => {
+    const newEmail = e.target.value
+    setEmail(newEmail)
+
+    // Simulating an API call to check if email exists
+    const emailExists = await new Promise((resolve) => {
+      setTimeout(() => resolve(Math.random() < 0.5), 500) // 50% chance email exists
+    })
+
+    if (emailExists) {
+      setEmailError("This email is already in use.")
+      alert("This email is already in use. Please choose a different email.")
+    } else {
+      setEmailError("")
+    }
+  }
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative bg-[url('https://www.racefans.net/wp-content/uploads/2018/09/racefansdotnet-20180930-200940-16.jpg')] before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-40">
       <div className="w-full max-w-md">
@@ -73,6 +95,7 @@ export default function Register() {
             </div>
 
             <div className="relative">
+              {emailError && <p className="text-red-500 text-sm mb-1">{emailError}</p>}
               <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-red-400">
                 <svg
                   className="w-5 h-5"
@@ -92,8 +115,11 @@ export default function Register() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border border-gray-600 focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400"
+                className={`w-full pl-10 pr-4 py-2 rounded-lg bg-transparent border ${emailError ? "border-red-500" : "border-gray-600"} focus:border-white focus:ring-2 focus:ring-red-500 text-white placeholder-gray-400`}
+                value={email}
+                onChange={checkEmail}
               />
+              {/* {emailError && <p className="text-red-500 text-xs mt-1">{emailError}</p>} */}
             </div>
 
             <div className="relative">
