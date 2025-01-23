@@ -29,7 +29,9 @@ const nextConfig = {
       'assets.quintevents.com',
       'via.placeholder.com',
       'd2xpg1khvwxlf1.cloudfront.net',
-      'vectorseek.com'
+      'vectorseek.com',
+      'hebbkx1anhila5yf.public.blob.vercel-storage.com',
+      'sjc.microlink.io'
       
     ],
   },

@@ -28,22 +28,22 @@ const SponsorLogo: React.FC<{ sponsor: Sponsor; size?: string }> = ({ sponsor, s
 
 export const Footer: React.FC = () => {
   const sponsors: Sponsor[] = [
-  { name: "Red Bull", logo: "https://www.f1authentics.com/cdn/shop/files/Team-Logos-1500x1800px-REDBULL-Mono.png?v=1704457541&width=400" },
-  { name: "Ferrari", logo: "https://www.pngmart.com/files/22/Ferrari-Logo-PNG-Clipart.png" },
-  { name: "Mercedes", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1200px-Mercedes-Logo.svg.png" },
-  { name: "McLaren", logo: "https://mma.prnewswire.com/media/1574496/McLaren_F1_Team_Logo.jpg" },
-  { name: "Aston Martin", logo: "https://www.targetmotori.com/wp-content/uploads/2021/03/aston-martin-f1-logo.png" },
-  { name: "Alpine", logo: "https://www.targetmotori.com/wp-content/uploads/2021/03/alpine-logo-1.png" },
-  { name: "Williams", logo: "https://cdn.freebiesupply.com/logos/large/2x/brother-williams-f1-2-logo-png-transparent.png" },
-  { name: "AlphaTauri", logo: "https://az1.hatstoremedia.com/hatstore/images/image-toro-rosso-2020-02-17-150121261/555/555/0/alphatauri.png" },
-  { name: "Alfa Romeo", logo: "https://www.targetmotori.com/wp-content/uploads/2021/03/alfa-romeo-f1-logo.png" },
-  { name: "Haas", logo: "https://th.bing.com/th/id/R.4180e61bca1696c59257493cb1a789c3?rik=1drT1O1%2fsAtqZw&riu=http%3a%2f%2fwww.sz4a.cn%2fPublic%2fUploads%2fimage%2fcai%2fHaas-logo-500x281.png&ehk=yF2QnaCVPBxlVb0athhiKm93KF3x79E8dsR9SiXt63g%3d&risl=&pid=ImgRaw&r=0" },
-  { name: "Pirelli", logo: "https://i.pinimg.com/originals/02/3e/8c/023e8c2c808825a9ee3c2a3337d2d85e.png" },
-  { name: "DHL", logo: "https://static.vecteezy.com/system/resources/previews/024/555/248/non_2x/dhl-logo-transparent-free-png.png" },
-  { name: "Aramco", logo: "https://th.bing.com/th/id/OIP.DVtJBnFYw7UhNtZoO2smBgAAAA?rs=1&pid=ImgDetMain" },
-  { name: "AWS", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" },
-  { name: "Rolex", logo: "https://freepngimg.com/thumb/rolex/28223-7-rolex-logo-image.png" },
-  { name: "Heineken", logo: "https://brandslogos.com/wp-content/uploads/images/large/heineken-logo-5.png" },
+  { name: "Red Bull", logo: "/Redbulfooter.jpg" },
+  { name: "Ferrari", logo: "/ferarifooter.jpg" },
+  { name: "Mercedes", logo: "/mercedesfooter.jpg" },
+  { name: "McLaren", logo: "/McLarenfooter.jpg" },
+  { name: "Aston Martin", logo: "/astonmartinfooter.jpg" },
+  { name: "Alpine", logo: "/alpinefooter.jpg" },
+  { name: "Williams", logo: "/brotherfooter.jpg" },
+  { name: "AlphaTauri", logo: "/alphataurifooter.jpg" },
+  { name: "Alfa Romeo", logo: "/alfaromeofooter.jpg" },
+  { name: "Haas", logo: "/hassfooter.jpg" },
+  { name: "Pirelli", logo: "/pirellifooter.jpg" },
+  { name: "DHL", logo: "/dhlfooter.jpg" },
+  { name: "Aramco", logo: "/aramcofooter.jpg" },
+  { name: "AWS", logo: "/awsfooter.jpg" },
+  { name: "Rolex", logo: "/rolexfooter.jpg" },
+  { name: "Heineken", logo: "/heinekenfooter.jpg" },
   // Add more sponsors as needed
   ];
 
